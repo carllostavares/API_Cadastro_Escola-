@@ -1,0 +1,12 @@
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\bin\Debug\net7.0\Api-Escola.Domain.deps.json
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\bin\Debug\net7.0\Api-Escola.Domain.dll
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\bin\Debug\net7.0\Api-Escola.Domain.pdb
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\Api-Escola.Domain.csproj.AssemblyReference.cache
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\Api-Escola.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\Api-Escola.Domain.AssemblyInfoInputs.cache
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\Api-Escola.Domain.AssemblyInfo.cs
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\Api-Escola.Domain.csproj.CoreCompileInputs.cache
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\Api-Escola.Domain.dll
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\refint\Api-Escola.Domain.dll
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\Api-Escola.Domain.pdb
+C:\Users\carlo\Desktop\auladotnet\Api-Escola\Api-Escola.Domain\obj\Debug\net7.0\ref\Api-Escola.Domain.dll
