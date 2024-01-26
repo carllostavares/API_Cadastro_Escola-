@@ -23,7 +23,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-AcessandoBanco.BuscandoDadosAluno();
-//AcessandoBanco.InserindoDadosAluno();
 
 app.Run();

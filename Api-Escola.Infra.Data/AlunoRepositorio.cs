@@ -1,15 +1,18 @@
 ﻿using Api_Escola.Infra.Data.SqlDataBase;
 using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-namespace Api_Escola.Application.Services
+namespace Api_Escola.Infra.Data
 {
-
-    public static class AcessandoBanco
+    public class AlunoRepositorio
     {
-        public static string? scriptSql;
+        public string? scriptSql;
 
-        public static void BuscandoDadosAluno()
+        public void BuscarAluno(string nome, string cpf, DateTime dataNascimento)
         {
             scriptSql = "select id_cpf_aluno, nome, data_nascimento from tb_aluno";
             try
@@ -34,9 +37,9 @@ namespace Api_Escola.Application.Services
             }
         }
 
-        public static void InserindoDadosAluno()
+        public void SalvarAluno(string nome, string cpf, DateTime dataNascimento)
         {
-            scriptSql = "INSERT INTO tb_aluno VALUES(\"00033344466\",\"Junior Kaua\",\"2099-05-20\")";
+            scriptSql = "INSERT INTO tb_aluno VALUES('" + cpf + "','" + nome + "','2099-05-20')";
             try
             {
                 using (MySqlConnection connection = BancoMysql.AbrirConexao())
@@ -54,4 +57,3 @@ namespace Api_Escola.Application.Services
         }
     }
 }
-

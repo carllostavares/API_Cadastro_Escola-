@@ -19,6 +19,6 @@ namespace Api_Escola.Domain.Entities
 
         [Required(ErrorMessage = "O campo Descrição é obrigatório!")]
         [StringLength(300)]
-        public DateTime DataNascimento { get; set; }
+        public string DataNascimento { get; set; }
     }
 }

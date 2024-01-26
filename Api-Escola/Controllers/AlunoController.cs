@@ -8,20 +8,35 @@ using System;
 namespace Api_Escola.Controllers
 {
     [ApiController]
-    [Route("Api/escola/alunos")]
-    public class ProdutoController : ControllerBase
+    [Route("api/escola")]
+    public class EscolaController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("consultar_aluno")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public ActionResult<IEnumerable<Aluno>> BuscaAlunos()
+        public IActionResult BuscaAlunos(string nome, string cpf, DateTime dataNascimento)
         {
-            AcessandoBanco.BuscandoDadosAluno();
+            AlunoService nomeQualquer = new AlunoService();
+
+          // var aluno = nomeQualquer.BuscandoDadosAluno(nome, cpf, dataNascimento);
+
             return Ok();
         }
 
+        [HttpPost("salvar_aluno")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
+        public IActionResult SalvarAluno(string nome, string cpf, DateTime dataNascimento)
+        {
+            AlunoService nomeQualquer = new AlunoService();
+
+            nomeQualquer.InserindoDadosAluno(nome, cpf, dataNascimento);
+
+            return Ok();
+        }
     }
 
 
- }
+}
