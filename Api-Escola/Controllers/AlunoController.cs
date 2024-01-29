@@ -11,28 +11,41 @@ namespace Api_Escola.Controllers
     [Route("api/escola")]
     public class EscolaController : ControllerBase
     {
-        [HttpGet("consultar_aluno")]
+        [HttpGet("aluno")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public IActionResult BuscaAlunos(string nome, string cpf, DateTime dataNascimento)
+        public IActionResult BuscaAlunos()
         {
-            AlunoService nomeQualquer = new AlunoService();
+            AlunoService aluno = new AlunoService();
 
-          // var aluno = nomeQualquer.BuscandoDadosAluno(nome, cpf, dataNascimento);
+            var alunos = aluno.RetornarAluno();
 
-            return Ok();
+            return Ok(alunos);
         }
 
-        [HttpPost("salvar_aluno")]
+        [HttpGet("aluno/id")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
+        public IActionResult BuscaAlunos(string cpf)
+        {
+            AlunoService aluno = new AlunoService();
+
+            var retornoAluno =aluno.RetornarAlunoPorId(cpf);
+
+            return Ok(retornoAluno);
+        }
+
+        [HttpPost("aluno")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
         public IActionResult SalvarAluno(string nome, string cpf, DateTime dataNascimento)
         {
-            AlunoService nomeQualquer = new AlunoService();
+            AlunoService novoAluno = new AlunoService();
 
-            nomeQualquer.InserindoDadosAluno(nome, cpf, dataNascimento);
+            novoAluno.InserindoDadosAluno(nome, cpf, dataNascimento);
 
             return Ok();
         }

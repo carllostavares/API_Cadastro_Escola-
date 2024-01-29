@@ -2250,9 +2250,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api-Escola.Domain.csproj",
-      "projectName": "Api-Escola.Domain",
-      "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api-Escola.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj",
+      "projectName": "Api.Escola.Domain",
+      "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj",
       "packagesPath": "C:\\Users\\432399\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\obj\\",
       "projectStyle": "PackageReference",

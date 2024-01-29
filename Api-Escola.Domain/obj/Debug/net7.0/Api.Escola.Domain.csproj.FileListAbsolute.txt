@@ -1,0 +1,13 @@
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\bin\Debug\net7.0\Api.Escola.Domain.deps.json
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\bin\Debug\net7.0\Api.Escola.Domain.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\bin\Debug\net7.0\Api.Escola.Domain.pdb
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\Api.Escola.Domain.csproj.AssemblyReference.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\Api.Escola.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\Api.Escola.Domain.AssemblyInfoInputs.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\Api.Escola.Domain.AssemblyInfo.cs
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\Api.Escola.Domain.csproj.CoreCompileInputs.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\Api.Escola.Domain.sourcelink.json
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\Api.Escola.Domain.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\refint\Api.Escola.Domain.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\Api.Escola.Domain.pdb
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api-Escola.Domain\obj\Debug\net7.0\ref\Api.Escola.Domain.dll

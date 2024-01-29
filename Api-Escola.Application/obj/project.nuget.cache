@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F6QYageUZV9llnlIQgZxZQd7tMwi9ie8UqDAg+pZYrd3zWZ9NwQ4NZc9xfIoVLJLAmrYQpVyGSgZg9fGDzUEqw==",
+  "dgSpecHash": "+CC4crltElh0vfRXuJ700mgwENKG1LpdCDBzBN090kWDC4QQWljqMT7N38upiQUogSZqdq8ckNAN1eKCYF7N/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Application\\Api-Escola.Application.csproj",
+  "projectFilePath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Application\\Api.Escola.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\432399\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\432399\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",

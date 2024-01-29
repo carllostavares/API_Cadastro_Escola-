@@ -642,7 +642,7 @@
           "lib/net7.0/ZstdSharp.dll": {}
         }
       },
-      "Api-Escola.Domain/1.0.0": {
+      "Api.Escola.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -651,10 +651,10 @@
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
-          "bin/placeholder/Api-Escola.Domain.dll": {}
+          "bin/placeholder/Api.Escola.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Api-Escola.Domain.dll": {}
+          "bin/placeholder/Api.Escola.Domain.dll": {}
         }
       }
     }
@@ -2250,15 +2250,15 @@
         "zstdsharp.port.nuspec"
       ]
     },
-    "Api-Escola.Domain/1.0.0": {
+    "Api.Escola.Domain/1.0.0": {
       "type": "project",
-      "path": "../Api-Escola.Domain/Api-Escola.Domain.csproj",
-      "msbuildProject": "../Api-Escola.Domain/Api-Escola.Domain.csproj"
+      "path": "../Api-Escola.Domain/Api.Escola.Domain.csproj",
+      "msbuildProject": "../Api-Escola.Domain/Api.Escola.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Api-Escola.Domain >= 1.0.0",
+      "Api.Escola.Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
       "MySql.Data >= 8.3.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -2271,9 +2271,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api-Escola.Infra.Data.csproj",
-      "projectName": "Api-Escola.Infra.Data",
-      "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api-Escola.Infra.Data.csproj",
+      "projectUniqueName": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj",
+      "projectName": "Api.Escola.Infra.Data",
+      "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj",
       "packagesPath": "C:\\Users\\432399\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
@@ -2297,8 +2297,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api-Escola.Domain.csproj": {
-              "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api-Escola.Domain.csproj"
+            "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj": {
+              "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj"
             }
           }
         }
