@@ -1,6 +1,7 @@
 ﻿using Api.Escola.Application.Interfaces;
 using Api.Escola.Domain.Entities;
-using Api.Escola.Infra.Data;
+using Escola.Infraestrutura;
+
 
 
 namespace Api.Escola.Application.Services

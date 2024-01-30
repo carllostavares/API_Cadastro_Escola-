@@ -36,8 +36,8 @@
               "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj": {
                 "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj"
               },
-              "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj"
+              "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj": {
+                "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj"
               }
             }
           }
@@ -159,14 +159,14 @@
         }
       }
     },
-    "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj": {
+    "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj",
-        "projectName": "Api.Escola.Infra.Data",
-        "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj",
+        "projectName": "Escola.Infraestrutura",
+        "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj",
         "packagesPath": "C:\\Users\\432399\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

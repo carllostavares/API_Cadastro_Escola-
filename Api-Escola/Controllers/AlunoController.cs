@@ -43,7 +43,7 @@ namespace Api_Escola.Controllers
 
             novoAluno.InserindoDadosAluno(nome, cpf, dataNascimento);
 
-            return Ok();
+            return StatusCode(StatusCodes.Status201Created);
         }
     }
 

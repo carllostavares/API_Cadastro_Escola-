@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Api-Escola.Domain\Api.Escola.Domain.csproj" />
-    <ProjectReference Include="..\Api-Escola.Infra.Data\Api.Escola.Infra.Data.csproj" />
+    <ProjectReference Include="..\Escola.Infraestrutura\Escola.Infraestrutura.csproj" />
   </ItemGroup>
 
   <ItemGroup>

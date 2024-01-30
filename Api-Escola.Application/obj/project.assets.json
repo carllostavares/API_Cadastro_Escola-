@@ -657,7 +657,7 @@
           "bin/placeholder/Api.Escola.Domain.dll": {}
         }
       },
-      "Api.Escola.Infra.Data/1.0.0": {
+      "Escola.Infraestrutura/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -667,10 +667,10 @@
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
-          "bin/placeholder/Api.Escola.Infra.Data.dll": {}
+          "bin/placeholder/Escola.Infraestrutura.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Api.Escola.Infra.Data.dll": {}
+          "bin/placeholder/Escola.Infraestrutura.dll": {}
         }
       }
     }
@@ -2271,16 +2271,16 @@
       "path": "../Api-Escola.Domain/Api.Escola.Domain.csproj",
       "msbuildProject": "../Api-Escola.Domain/Api.Escola.Domain.csproj"
     },
-    "Api.Escola.Infra.Data/1.0.0": {
+    "Escola.Infraestrutura/1.0.0": {
       "type": "project",
-      "path": "../Api-Escola.Infra.Data/Api.Escola.Infra.Data.csproj",
-      "msbuildProject": "../Api-Escola.Infra.Data/Api.Escola.Infra.Data.csproj"
+      "path": "../Escola.Infraestrutura/Escola.Infraestrutura.csproj",
+      "msbuildProject": "../Escola.Infraestrutura/Escola.Infraestrutura.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Api.Escola.Domain >= 1.0.0",
-      "Api.Escola.Infra.Data >= 1.0.0",
+      "Escola.Infraestrutura >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
       "MySql.Data >= 8.3.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -2322,8 +2322,8 @@
             "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj": {
               "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj"
             },
-            "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Infra.Data\\Api.Escola.Infra.Data.csproj"
+            "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj": {
+              "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj"
             }
           }
         }
