@@ -1,23 +1,18 @@
-﻿using Api_Escola.Domain.Entities;
+﻿using Api.Escola.Domain.Entities;
+using Api.Escola.Domain.Utils;
+using Api.Escola.Infra.Data.Interfaces;
 using Api_Escola.Infra.Data.SqlDataBase;
 using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+namespace Api.Escola.Infra.Data
 
-namespace Api_Escola.Infra.Data
 {
-    public class AlunoRepositorio
+    public class AlunoRepositorio : IAlunoRepositorio
     {
-        public string? scriptSql;
-
-        public List<Aluno> BuscarAluno()
+        public List<Alunos> BuscarAluno()
         {
-            scriptSql = "select id_cpf_aluno, nome, data_nascimento from tb_aluno";
+            string scriptSql = Constantes.Aluno.sqlSelect;
 
-            List<Aluno> alunos = new List<Aluno>();
+            List<Alunos> alunos = new List<Alunos>();
             try
             {
                 using (MySqlConnection connection = BancoMysql.AbrirConexao())
@@ -28,43 +23,47 @@ namespace Api_Escola.Infra.Data
                         {
                             while (retornaSelect.Read())
                             {
-                                Aluno aluno = new Aluno();
+                                Alunos aluno = new Alunos();
                                 aluno.IdCpf = retornaSelect["id_cpf_aluno"].ToString();
                                 aluno.Nome = retornaSelect["nome"].ToString();
                                 aluno.DataNascimento = retornaSelect["data_nascimento"].ToString();
                                 alunos.Add(aluno);
                             }
+                            return alunos;
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
             }
-            return alunos;
+
         }
 
-        public Aluno BuscarAlunoPorId(string cpf)
+        public Alunos BuscarAlunoPorId(string cpf)
         {
-            scriptSql = "select id_cpf_aluno, nome, data_nascimento from tb_aluno where '" + cpf + "'= id_cpf_aluno ";
+            string scriptSql = Constantes.Aluno.sqlSelecPorCpf;
 
-            Aluno aluno = new Aluno();
+
+            Alunos aluno = new Alunos();
             try
             {
                 using (MySqlConnection connection = BancoMysql.AbrirConexao())
                 {
                     using (MySqlCommand command = new MySqlCommand(scriptSql, connection))
                     {
+                        command.Parameters.AddWithValue("@cpf", cpf);
                         using (MySqlDataReader retornaSelect = command.ExecuteReader())
                         {
                             while (retornaSelect.Read())
                             {
-                           
+
                                 aluno.IdCpf = retornaSelect["id_cpf_aluno"].ToString();
                                 aluno.Nome = retornaSelect["nome"].ToString();
                                 aluno.DataNascimento = retornaSelect["data_nascimento"].ToString();
-                             
+
                             }
                         }
                     }
@@ -72,14 +71,15 @@ namespace Api_Escola.Infra.Data
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
             }
             return aluno;
         }
 
         public void SalvarAluno(string nome, string cpf, DateTime dataNascimento)
         {
-            scriptSql = "INSERT INTO tb_aluno VALUES('" + cpf + "','" + nome + "','2099-05-20')";
+            string scriptSql = Constantes.Aluno.sqlInsert.Replace("\\", "  ");
             try
             {
                 using (MySqlConnection connection = BancoMysql.AbrirConexao())
@@ -92,7 +92,8 @@ namespace Api_Escola.Infra.Data
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
             }
         }
     }

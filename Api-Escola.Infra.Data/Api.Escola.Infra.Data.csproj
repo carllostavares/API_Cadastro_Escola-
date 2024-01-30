@@ -14,7 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Api-Escola.Domain\Api.Escola.Domain.csproj" />
+
+	  <ProjectReference Include="..\Api-Escola.Domain\Api.Escola.Domain.csproj" />
+
   </ItemGroup>
 
 </Project>

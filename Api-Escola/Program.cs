@@ -1,4 +1,3 @@
-using Api_Escola.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

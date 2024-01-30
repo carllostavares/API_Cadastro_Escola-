@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Api_Escola.Domain.Entities
+namespace Api.Escola.Domain.Entities
 {
-    public class Aluno
+    public class Alunos
     {
         [Key]
         [Required(ErrorMessage = "O campo Id é obrigatório!")]

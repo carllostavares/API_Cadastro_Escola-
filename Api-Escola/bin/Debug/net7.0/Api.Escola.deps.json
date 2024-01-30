@@ -9,7 +9,6 @@
       "Api.Escola/1.0.0": {
         "dependencies": {
           "Api.Escola.Application": "1.0.0",
-          "Api.Escola.Domain": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.9",
           "MySql.Data": "8.3.0",
           "Swashbuckle.AspNetCore": "6.5.0"

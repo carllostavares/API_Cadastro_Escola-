@@ -268,9 +268,6 @@
             "projectReferences": {
               "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Application\\Api.Escola.Application.csproj": {
                 "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Application\\Api.Escola.Application.csproj"
-              },
-              "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj": {
-                "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Api-Escola.Domain\\Api.Escola.Domain.csproj"
               }
             }
           }

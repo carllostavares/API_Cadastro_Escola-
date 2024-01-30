@@ -1,32 +1,58 @@
-﻿using Api_Escola.Domain.Entities;
-using Api_Escola.Infra.Data;
-using Api_Escola.Infra.Data.SqlDataBase;
-using MySql.Data.MySqlClient;
+﻿using Api.Escola.Application.Interfaces;
+using Api.Escola.Domain.Entities;
+using Api.Escola.Infra.Data;
 
 
-namespace Api_Escola.Application.Services
+namespace Api.Escola.Application.Services
 {
 
-    public class AlunoService
+    public class AlunoService : IAlunoService
     {
-        
-        public List<Aluno> RetornarAluno()
+        public List<Alunos> RetornarAluno()
         {
-            AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
-            var alunos = alunoRepositorio.BuscarAluno();
-            return alunos;
+            try
+            {
+                AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
+                var alunos = alunoRepositorio.BuscarAluno();
+                return alunos;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
+            }
+
         }
-        public Aluno RetornarAlunoPorId(string cpf)
+
+        public Alunos RetornarAlunoPorId(string cpf)
         {
-            AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
-            var aluno = alunoRepositorio.BuscarAlunoPorId(cpf);
-            return aluno;
+            try
+            {
+                AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
+                var aluno = alunoRepositorio.BuscarAlunoPorId(cpf);
+                return aluno;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
+            }
+
         }
 
         public void InserindoDadosAluno(string nome, string cpf, DateTime dataNascimento)
         {
-            AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
-            alunoRepositorio.SalvarAluno(nome, cpf, dataNascimento);
+            try
+            {
+                AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
+                alunoRepositorio.SalvarAluno(nome, cpf, dataNascimento);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
+            }
+
         }
 
     }

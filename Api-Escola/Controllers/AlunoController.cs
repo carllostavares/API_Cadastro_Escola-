@@ -1,17 +1,13 @@
-﻿using Api_Escola.Application.Services;
-
-using Api_Escola.Domain.Entities;
+﻿using Api.Escola.Application.Services;
 using Microsoft.AspNetCore.Mvc;
-using MySql.Data.MySqlClient;
-using System;
 
 namespace Api_Escola.Controllers
 {
     [ApiController]
-    [Route("api/escola")]
+    [Route("api/aluno")]
     public class EscolaController : ControllerBase
     {
-        [HttpGet("aluno")]
+        [HttpGet("buscar")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -24,7 +20,7 @@ namespace Api_Escola.Controllers
             return Ok(alunos);
         }
 
-        [HttpGet("aluno/id")]
+        [HttpGet("buscar/cpf")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -37,7 +33,7 @@ namespace Api_Escola.Controllers
             return Ok(retornoAluno);
         }
 
-        [HttpPost("aluno")]
+        [HttpPost("buscar")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
