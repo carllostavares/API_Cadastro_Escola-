@@ -5,7 +5,7 @@ namespace Api_Escola.Controllers
 {
     [ApiController]
     [Route("api/aluno")]
-    public class EscolaController : ControllerBase
+    public class AlunoController : ControllerBase
     {
         [HttpGet("buscar")]
         [ProducesResponseType(StatusCodes.Status200OK)]

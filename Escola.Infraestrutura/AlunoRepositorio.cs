@@ -60,7 +60,7 @@ namespace Escola.Infraestrutura
                             while (retornaSelect.Read())
                             {
 
-                                aluno.IdCpf = retornaSelect["id_cpf_aluno"].ToString();
+                                aluno.Cpf = retornaSelect["id_cpf_aluno"].ToString();
                                 aluno.Nome = retornaSelect["nome_aluno"].ToString();
                                 aluno.DataNascimento = retornaSelect["data_nascimento"].ToString();
 
@@ -77,7 +77,7 @@ namespace Escola.Infraestrutura
             return aluno;
         }
 
-        public void SalvarAluno(string nome, string cpf, string dataNascimento)
+        public void SalvarAluno(string cpf, string nome, string dataNascimento)
         {
             string scriptSql = Constantes.Aluno.sqlInsert;
             try
@@ -86,9 +86,9 @@ namespace Escola.Infraestrutura
                 {
                     using (MySqlCommand command = new MySqlCommand(scriptSql, connection))
                     {
-                        command.Parameters.AddWithValue("@id_cpf_aluno",cpf);
+                        command.Parameters.AddWithValue("@cpf", cpf);
                         command.Parameters.AddWithValue("@nome",nome);
-                        //command.Parameters.AddWithValue("@data_nascimento", dataNascimento);
+                        command.Parameters.AddWithValue("@data_nascimento", dataNascimento);
 
                         command.ExecuteNonQuery();
                     }
