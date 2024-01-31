@@ -1,4 +1,4 @@
-﻿using Api.Escola.Domain.Entities;
+﻿using Escola.Domain.Entities;
 
 namespace Escola.Infraestrutura.Interfaces
 {
@@ -8,7 +8,7 @@ namespace Escola.Infraestrutura.Interfaces
 
         Alunos BuscarAlunoPorId(string cpf);
 
-        void SalvarAluno(string nome, string cpf, DateTime dataNascimento);
+        void SalvarAluno(string nome, string cpf, string dataNascimento);
 
     }
 }

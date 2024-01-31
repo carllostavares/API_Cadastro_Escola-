@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Escola.Infraestrutura/1.0.0": {
         "dependencies": {
-          "Api.Escola.Domain": "1.0.0",
+          "Escola.Domain": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.9",
           "MySql.Data": "8.3.0",
           "Swashbuckle.AspNetCore": "6.5.0"
@@ -358,14 +358,14 @@
           }
         }
       },
-      "Api.Escola.Domain/1.0.0": {
+      "Escola.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "7.0.9",
           "MySql.Data": "8.3.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
-          "Api.Escola.Domain.dll": {}
+          "Escola.Domain.dll": {}
         }
       }
     }
@@ -649,7 +649,7 @@
       "path": "zstdsharp.port/0.7.1",
       "hashPath": "zstdsharp.port.0.7.1.nupkg.sha512"
     },
-    "Api.Escola.Domain/1.0.0": {
+    "Escola.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

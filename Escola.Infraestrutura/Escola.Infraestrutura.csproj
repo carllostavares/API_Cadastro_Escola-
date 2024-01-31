@@ -15,7 +15,9 @@
 
   <ItemGroup>
 
-	  <ProjectReference Include="..\Api-Escola.Domain\Api.Escola.Domain.csproj" />
+	  <ProjectReference Include="..\Escola.Domain\Escola.Domain.csproj" />
+
+	  <ProjectReference Include="..\Escola.Domain\Escola.Domain.csproj" />
 
   </ItemGroup>
 

@@ -1,5 +1,5 @@
-﻿using Api.Escola.Domain.Entities;
-using Api.Escola.Domain.Utils;
+﻿using Escola.Domain.Entities;
+using Escola.Domain.Utils;
 using Escola.Infraestrutura.SqlDataBase;
 using Escola.Infraestrutura.Interfaces;
 using MySql.Data.MySqlClient;
@@ -24,8 +24,8 @@ namespace Escola.Infraestrutura
                             while (retornaSelect.Read())
                             {
                                 Alunos aluno = new Alunos();
-                                aluno.IdCpf = retornaSelect["id_cpf_aluno"].ToString();
-                                aluno.Nome = retornaSelect["nome"].ToString();
+                                aluno.Cpf = retornaSelect["id_cpf_aluno"].ToString();
+                                aluno.Nome = retornaSelect["nome_aluno"].ToString();
                                 aluno.DataNascimento = retornaSelect["data_nascimento"].ToString();
                                 alunos.Add(aluno);
                             }
@@ -61,7 +61,7 @@ namespace Escola.Infraestrutura
                             {
 
                                 aluno.IdCpf = retornaSelect["id_cpf_aluno"].ToString();
-                                aluno.Nome = retornaSelect["nome"].ToString();
+                                aluno.Nome = retornaSelect["nome_aluno"].ToString();
                                 aluno.DataNascimento = retornaSelect["data_nascimento"].ToString();
 
                             }
@@ -77,15 +77,19 @@ namespace Escola.Infraestrutura
             return aluno;
         }
 
-        public void SalvarAluno(string nome, string cpf, DateTime dataNascimento)
+        public void SalvarAluno(string nome, string cpf, string dataNascimento)
         {
-            string scriptSql = Constantes.Aluno.sqlInsert.Replace("\\", "  ");
+            string scriptSql = Constantes.Aluno.sqlInsert;
             try
             {
                 using (MySqlConnection connection = BancoMysql.AbrirConexao())
                 {
                     using (MySqlCommand command = new MySqlCommand(scriptSql, connection))
                     {
+                        command.Parameters.AddWithValue("@id_cpf_aluno",cpf);
+                        command.Parameters.AddWithValue("@nome",nome);
+                        //command.Parameters.AddWithValue("@data_nascimento", dataNascimento);
+
                         command.ExecuteNonQuery();
                     }
                 }
