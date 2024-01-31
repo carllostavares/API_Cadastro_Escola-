@@ -37,11 +37,11 @@ namespace Api_Escola.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public IActionResult SalvarAluno(string nome, string cpf, string dataNascimento)
+        public IActionResult SalvarAluno( string cpf, string nome, string dataNascimento)
         {
             AlunoService novoAluno = new AlunoService();
 
-            novoAluno.InserindoDadosAluno(nome, cpf, dataNascimento);
+            novoAluno.InserindoDadosAluno(cpf, nome, dataNascimento);
 
             return StatusCode(StatusCodes.Status201Created);
         }

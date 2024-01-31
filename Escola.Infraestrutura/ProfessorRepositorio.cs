@@ -10,7 +10,7 @@ namespace Escola.Infraestrutura
     {
         public List<Professor> BuscarProfessor()
         {
-            string scriptSql = Constantes.ConstProfessor.sqlSelect;
+            string scriptSql = Constantes.ProfessorQuery.sqlSelect;
 
             List<Professor> professores = new List<Professor>();
             try
@@ -46,7 +46,7 @@ namespace Escola.Infraestrutura
 
         public Professor BuscarProfessorPorId(string cpf)
         {
-            string scriptSql = Constantes.ConstProfessor.sqlSelecPorCpf;
+            string scriptSql = Constantes.ProfessorQuery.sqlSelecPorCpf;
 
 
             Professor professor = new Professor();
@@ -61,7 +61,6 @@ namespace Escola.Infraestrutura
                         {
                             while (retornaSelect.Read())
                             {
-
                                 professor.Cpf = retornaSelect["id_cpf_professor"].ToString();
                                 professor.Nome = retornaSelect["nome_professor"].ToString();
                                 professor.DataNascimento = retornaSelect["data_nascimento"].ToString();
@@ -79,9 +78,9 @@ namespace Escola.Infraestrutura
             return professor;
         }
 
-        public void SalvarProfessor(string nome, string cpf, string dataNascimento, string disciplina)
+        public void SalvarProfessor(string cpf, string nome, string dataNascimento, string disciplina)
         {
-            string scriptSql = Constantes.ConstProfessor.sqlInsert;
+            string scriptSql = Constantes.ProfessorQuery.sqlInsert;
             try
             {
                 using (MySqlConnection connection = BancoMysql.AbrirConexao())

@@ -41,12 +41,12 @@ namespace Escola.Application.Services
 
         }
 
-        public void InserindoDadosAluno(string nome, string cpf, string dataNascimento)
+        public void InserindoDadosAluno(string cpf, string nome, string dataNascimento)
         {
             try
             {
                 AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
-                alunoRepositorio.SalvarAluno(nome, cpf, dataNascimento);
+                alunoRepositorio.SalvarAluno(cpf, nome, dataNascimento);
             }
             catch (Exception ex)
             {
