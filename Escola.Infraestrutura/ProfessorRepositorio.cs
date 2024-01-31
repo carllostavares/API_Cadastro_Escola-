@@ -90,7 +90,7 @@ namespace Escola.Infraestrutura
                     {
                         command.Parameters.AddWithValue("@cpf", cpf);
                         command.Parameters.AddWithValue("@nome", nome);
-                        //command.Parameters.AddWithValue("@data_nascimento", dataNascimento);
+                        command.Parameters.AddWithValue("@data_nascimento", dataNascimento);
                         command.Parameters.AddWithValue("@disciplina", disciplina);
 
 
