@@ -30,4 +30,4 @@ drop  table tb_professor;
 DELETE FROM tb_aluno;
 DELETE FROM tb_professor;
 
-INSERT INTO tb_aluno ( id_cpf_aluno, nome, data_nascimento) VALUES("id_cpf_aluno","nome","2099-05-30");
+INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento) VALUES("11122233366","nome","2099-05-30");

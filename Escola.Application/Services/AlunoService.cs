@@ -1,6 +1,7 @@
 ﻿using Escola.Application.Interfaces;
 using Escola.Domain.Entities;
 using Escola.Infraestrutura;
+using Escola.Infraestrutura.Interfaces;
 
 
 
@@ -9,12 +10,21 @@ namespace Escola.Application.Services
 
     public class AlunoService : IAlunoService
     {
+        private readonly IAlunoRepositorio _alunoRepositorio;
+
+        public AlunoService(IAlunoRepositorio alunoRepositorio)
+        {
+            _alunoRepositorio = alunoRepositorio;
+        }
+
         public List<Alunos> RetornarAluno()
         {
             try
             {
-                AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
-                var alunos = alunoRepositorio.BuscarAluno();
+                //AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
+                //var alunos = alunoRepositorio.BuscarAluno();
+
+                var alunos = _alunoRepositorio.BuscarAluno();
                 return alunos;
             }
             catch (Exception ex)
@@ -29,8 +39,10 @@ namespace Escola.Application.Services
         {
             try
             {
-                AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
-                var aluno = alunoRepositorio.BuscarAlunoPorId(cpf);
+                //AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
+                //var aluno = alunoRepositorio.BuscarAlunoPorId(cpf);
+
+                var aluno = _alunoRepositorio.BuscarAlunoPorId(cpf);
                 return aluno;
             }
             catch (Exception ex)
@@ -45,8 +57,10 @@ namespace Escola.Application.Services
         {
             try
             {
-                AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
-                alunoRepositorio.SalvarAluno(cpf, nome, dataNascimento);
+                //AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
+                //alunoRepositorio.SalvarAluno(cpf, nome, dataNascimento);
+
+                _alunoRepositorio.SalvarAluno(cpf,nome , dataNascimento);
             }
             catch (Exception ex)
             {

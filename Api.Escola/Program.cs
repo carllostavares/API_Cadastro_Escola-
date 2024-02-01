@@ -1,4 +1,9 @@
 
+using Escola.Application.Interfaces;
+using Escola.Application.Services;
+using Escola.Infraestrutura.Interfaces;
+using Escola.Infraestrutura;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +13,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IAlunoService, AlunoService>();
+builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
 
 var app = builder.Build();
 

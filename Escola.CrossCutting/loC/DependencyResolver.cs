@@ -1,12 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Escola.Application.Interfaces;
+using Escola.Application.Services;
+using Escola.Infraestrutura;
+using Escola.Infraestrutura.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Escola.CrossCutting.loC
 {
-    internal class DependencyResolver
+    [ExcludeFromCodeCoverage]
+    public static class DependencyResolver
     {
+        public static void AddDependencyResolver(this IServiceCollection services)
+        {
+            RegisterApplications(services);
+            RegisterRepositories(services);
+
+        }
+
+        private static void RegisterApplications(IServiceCollection services)
+        {
+            services.AddScoped<IAlunoService, AlunoService>();
+            services.AddScoped<IProfessorService, ProfessorService>();
+        }
+
+        private static void RegisterRepositories(IServiceCollection services)
+        {
+
+            services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
+            services.AddScoped<IProfessorRepositorio, ProfessorRepositorio>();
+        }
     }
 }

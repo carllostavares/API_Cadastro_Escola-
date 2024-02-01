@@ -1,4 +1,4 @@
-﻿using Escola.Application.Services;
+﻿using Escola.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api_Escola.Controllers
@@ -7,16 +7,24 @@ namespace Api_Escola.Controllers
     [Route("api/aluno")]
     public class AlunoController : ControllerBase
     {
+        private readonly IAlunoService _alunoService;
+
+        public AlunoController(IAlunoService alunoService)
+        {
+            _alunoService = alunoService;
+        }
+
+
         [HttpGet("buscar")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
         public IActionResult BuscaAlunos()
         {
-            AlunoService aluno = new AlunoService();
+            //AlunoService aluno = new AlunoService();
+            //var alunos = aluno.RetornarAluno();
 
-            var alunos = aluno.RetornarAluno();
-
+            var alunos = _alunoService.RetornarAluno();
             return Ok(alunos);
         }
 
@@ -26,10 +34,9 @@ namespace Api_Escola.Controllers
         [ProducesDefaultResponseType]
         public IActionResult BuscaAlunos(string cpf)
         {
-            AlunoService aluno = new AlunoService();
-
-            var retornoAluno =aluno.RetornarAlunoPorId(cpf);
-
+            //AlunoService aluno = new AlunoService();
+            //var retornoAluno =aluno.RetornarAlunoPorId(cpf);
+            var retornoAluno = _alunoService.RetornarAlunoPorId(cpf);
             return Ok(retornoAluno);
         }
 
@@ -39,9 +46,10 @@ namespace Api_Escola.Controllers
         [ProducesDefaultResponseType]
         public IActionResult SalvarAluno( string cpf, string nome, string dataNascimento)
         {
-            AlunoService novoAluno = new AlunoService();
-
-            novoAluno.InserindoDadosAluno(cpf, nome, dataNascimento);
+            //AlunoService novoAluno = new AlunoService();
+            //novoAluno.InserindoDadosAluno(cpf, nome, dataNascimento);
+            
+            _alunoService.InserindoDadosAluno(cpf, nome, dataNascimento);
 
             return StatusCode(StatusCodes.Status201Created);
         }
