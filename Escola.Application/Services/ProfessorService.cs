@@ -1,6 +1,6 @@
 ﻿using Escola.Application.Interfaces;
 using Escola.Domain.Entities;
-using Escola.Infraestrutura;
+using Escola.Infraestrutura.Repositorios;
 
 
 

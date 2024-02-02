@@ -13,8 +13,6 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\K4os.Hash.xxHash.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -36,6 +34,8 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\MySql.Data.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\NuGet.Frameworks.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Refit.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Refit.HttpClientFactory.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll

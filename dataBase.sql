@@ -17,14 +17,35 @@ disciplina VARCHAR(100) NOT NULL,
 PRIMARY  KEY( id_cpf_professor)
 );
 
-SET SQL_SAFE_UPDATES = 0;
+CREATE TABLE tb_endereco(
+cep VARCHAR(20) NOT NULL,
+logradouro VARCHAR(200) NOT NULL,
+complemento VARCHAR(100),
+bairro VARCHAR(100) NOT NULL,
+localidade VARCHAR(100),
+uf VARCHAR(100) NOT NULL,
+ibge VARCHAR (100),
+gia VARCHAR(100),
+ddd VARCHAR(100) NOT NULL,
+siafi VARCHAR(100),
 
+PRIMARY KEY (cep)
+);
+
+
+INSERT INTO tb_endereco(cep,logradouro, complemento,bairro,localidade,uf,ibge,gia,ddd,siafi)
+ VALUES("53190000","Rua Tijuca", "Casa","Aguas Compridas","Alto","pe"," ", " ",81," ");
+
+
+
+SET SQL_SAFE_UPDATES = 0;
+SELECT *FROM tb_endereco;
 SELECT * FROM tb_aluno;
 SELECT * FROM tb_professor;
 
 select *from tb_aluno where id_cpf_aluno = "55555555555";
 
-drop  table tb_aluno;
+drop  table tb_endereco;
 drop  table tb_professor;
 
 DELETE FROM tb_aluno;

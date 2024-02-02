@@ -15,6 +15,7 @@ namespace Escola.Application.Services
         public AlunoService(IAlunoRepositorio alunoRepositorio)
         {
             _alunoRepositorio = alunoRepositorio;
+
         }
 
         public List<Alunos> RetornarAluno()
@@ -60,7 +61,7 @@ namespace Escola.Application.Services
                 //AlunoRepositorio alunoRepositorio = new AlunoRepositorio();
                 //alunoRepositorio.SalvarAluno(cpf, nome, dataNascimento);
 
-                _alunoRepositorio.SalvarAluno(cpf,nome , dataNascimento);
+                _alunoRepositorio.SalvarAluno(cpf,nome, dataNascimento);
             }
             catch (Exception ex)
             {

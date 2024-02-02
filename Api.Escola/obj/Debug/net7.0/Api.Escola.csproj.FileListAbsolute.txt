@@ -68,6 +68,8 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Domain.runtimeconfig.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Infraestrutura.deps.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Infraestrutura.runtimeconfig.json
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.CrossCutting.deps.json
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.CrossCutting.runtimeconfig.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\testhost.exe
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\appsettings.json
@@ -76,6 +78,8 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Api.Escola.runtimeconfig.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Api.Escola.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Api.Escola.pdb
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Google.Protobuf.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\K4os.Compression.LZ4.dll
@@ -83,8 +87,6 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\K4os.Hash.xxHash.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -106,6 +108,8 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\MySql.Data.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\NuGet.Frameworks.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Refit.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Refit.HttpClientFactory.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -192,9 +196,11 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Application.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.CrossCutting.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Domain.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Infraestrutura.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Application.pdb
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.CrossCutting.pdb
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Domain.pdb
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\bin\Debug\net7.0\Escola.Infraestrutura.pdb
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Api.Escola\obj\Debug\net7.0\Api.Escola.csproj.AssemblyReference.cache
