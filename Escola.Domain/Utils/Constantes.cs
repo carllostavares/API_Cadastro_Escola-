@@ -19,7 +19,7 @@
         }
         public static class EnderecoQuery
         {
-            public const string sqlInsertEndereco = "INSERT INTO tb_endereco(cep,logradouro, complemento,bairro,localidade,uf,ibge,gia,ddd,siafi) VALUES(@cep,@logradouro, @complento, @bairro,@localidade,@uf,@ibge,@gia,@ddd,@siafi)";
+            public const string sqlInsertEndereco = "INSERT INTO tb_endereco(cep,logradouro,bairro,localidade,uf) VALUES(@cep,@logradouro, @bairro,@localidade,@uf)";
 
         }
 

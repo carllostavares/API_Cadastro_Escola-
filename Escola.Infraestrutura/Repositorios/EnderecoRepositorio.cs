@@ -20,14 +20,10 @@ namespace Escola.Infraestrutura.Repositorios
                     {
                         command.Parameters.AddWithValue("@cep", endereco.Cep);
                         command.Parameters.AddWithValue("@logradouro", endereco.Logradouro);
-                        command.Parameters.AddWithValue("@complento", endereco.Complemento);
                         command.Parameters.AddWithValue("@bairro", endereco.Bairro);
                         command.Parameters.AddWithValue("@localidade", endereco.Localidade);
                         command.Parameters.AddWithValue("@uf", endereco.Uf);
-                        command.Parameters.AddWithValue("@ibge", endereco.Ibge);
-                        command.Parameters.AddWithValue("@gia", endereco.Gia);
-                        command.Parameters.AddWithValue("@ddd", endereco.Ddd);
-                        command.Parameters.AddWithValue("@siafi", endereco.Siafi);
+
 
                         command.ExecuteNonQuery();
                     }

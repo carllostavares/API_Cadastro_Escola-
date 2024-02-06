@@ -1,3 +1,9 @@
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.AssemblyInfo.cs
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.sourcelink.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\bin\Debug\net7.0\testhost.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\bin\Debug\net7.0\Escola.Application.deps.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\bin\Debug\net7.0\Escola.Application.runtimeconfig.json
@@ -131,12 +137,6 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\bin\Debug\net7.0\Escola.Application.pdb
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\bin\Debug\net7.0\Escola.Domain.pdb
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\bin\Debug\net7.0\Escola.Infraestrutura.pdb
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.csproj.AssemblyReference.cache
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.AssemblyInfoInputs.cache
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.AssemblyInfo.cs
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.csproj.CoreCompileInputs.cache
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.sourcelink.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.csproj.CopyComplete
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\Escola.CrossCutting.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.CrossCutting\obj\Debug\net7.0\refint\Escola.CrossCutting.dll

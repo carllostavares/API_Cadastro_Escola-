@@ -17,7 +17,10 @@ namespace api.Escola.Controllers
         }
 
         [HttpPost("{cep}")]
-        public async Task<ActionResult<Endereco>> RetornaEndereco(string cep)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
+        public async Task<ActionResult<Endereco>> SalvarEndereco(string cep)
         {
 
             var meuCep = await _viaCepIntegracao.RetornarDadosViaCep(cep);
@@ -26,12 +29,21 @@ namespace api.Escola.Controllers
                 return BadRequest("CEP não váliddo!");
 
             }
-
+            
             _enderecoService.InserindoDadosEndereco(meuCep);
 
             return StatusCode(StatusCodes.Status201Created,meuCep);
 
             //return (meuCep);
+
+        }
+
+        [HttpGet("{cep}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult Buscarndereco(string cep)
+        {
+            return Ok();
 
         }
 
