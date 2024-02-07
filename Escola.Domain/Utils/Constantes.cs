@@ -19,8 +19,16 @@
         }
         public static class EnderecoQuery
         {
-            public const string sqlInsertEndereco = "INSERT INTO tb_endereco(cep,logradouro,numero,bairro,localidade,uf, id_cpf_aluno) VALUES(@cep,@logradouro,@numero, @bairro,@localidade,@uf,@cpf)";
+            public const string sqlInsertEnderecoAluno = "INSERT INTO tb_endereco(cep,logradouro,numero,bairro,localidade,uf, id_cpf_aluno) VALUES(@cep,@logradouro,@numero, @bairro,@localidade,@uf,@cpf)";
+            public const string sqlInsertEnderecoProfessor = "INSERT INTO tb_endereco(cep,logradouro,numero,bairro,localidade,uf, id_cpf_professor) VALUES(@cep,@logradouro,@numero, @bairro,@localidade,@uf,@cpf)";
 
+            public const string sqlSelectEnderecoPorCpf = "SELECT cep,logradouro,numero,bairro,localidade,uf FROM tb_endereco where id_cpf_aluno = @cpf OR id_cpf_professor =@cpf";
+
+        }
+
+        public static class MateriaQuery
+        {
+            public const string sqlInserMateria = " INSERT INTO tb_materia(id_materia,nome,carga_horaria,id_cpf_professor) VALUES(@id, @nome,@cargaHoraria,@cpf)";
         }
 
     }

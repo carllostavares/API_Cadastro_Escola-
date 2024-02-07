@@ -18,11 +18,11 @@ namespace api.Escola.Controllers
             _enderecoService = enderecoService;
         }
 
-        [HttpPost("{cep}")]
+        [HttpPost("endereco/aluno")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public IActionResult SalvarEndereco(string cep,int numero,string cpf)
+        public IActionResult SalvarEnderecoAluno(string cep,string numero,string cpf)
         {
 
             var meuCep =  _integracaoCepService.RetornaCep(cep);
@@ -34,21 +34,46 @@ namespace api.Escola.Controllers
             }
             meuCep.Numero = numero;
             meuCep.Cpf = cpf;
-            _enderecoService.InserindoDadosEndereco(meuCep);
+            _enderecoService.InserindoDadosEnderecoAluno(meuCep);
 
             return StatusCode(StatusCodes.Status201Created,meuCep);
 
 
         }
 
-       /* [HttpGet("{cep}")]
+        [HttpPost("endereco/professor")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult Buscarndereco(string cep)
+        [ProducesDefaultResponseType]
+        public IActionResult SalvarEnderecoProfessor(string cep, string numero, string cpf)
         {
-            return Ok();
 
-        }*/
+            var meuCep = _integracaoCepService.RetornaCep(cep);
+
+            if (meuCep == null)
+            {
+                return BadRequest("CEP não váliddo!");
+
+            }
+            meuCep.Numero = numero;
+            meuCep.Cpf = cpf;
+            _enderecoService.InserindoDadosEnderecoProfessor(meuCep);
+
+            return StatusCode(StatusCodes.Status201Created, meuCep);
+
+
+        }
+
+        [HttpGet("Endereco/cpf")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult BuscarEnderecoPorCpf(string cpf)
+        {
+
+            var endereco = _enderecoService.RetornaEnderecoPorCpf(cpf);
+
+            return Ok(endereco);
+        }
 
     }
 }

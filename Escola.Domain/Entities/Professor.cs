@@ -6,6 +6,8 @@ namespace Escola.Domain.Entities
     {
         [Key]
         [Required(ErrorMessage ="O campo cpf é obrigatório")]
+        [StringLength(11)]
+
         public string ?Cpf { get; set; }
 
         [Required(ErrorMessage = "O campo nome é obrigatório")]

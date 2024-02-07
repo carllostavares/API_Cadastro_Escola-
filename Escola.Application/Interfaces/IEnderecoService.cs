@@ -4,6 +4,10 @@ namespace Escola.Application.Interfaces
 {
     public interface IEnderecoService
     {
-        void InserindoDadosEndereco(Endereco endereco);
+        void InserindoDadosEnderecoAluno(Endereco endereco);
+        void InserindoDadosEnderecoProfessor(Endereco endereco);
+
+        Endereco RetornaEnderecoPorCpf(string cpf);
+
     }
 }

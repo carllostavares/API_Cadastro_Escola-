@@ -13,16 +13,47 @@ namespace Escola.Application.Services
             _enderecoRepositorio = enderecoRepositorio;
         }
 
-        public void InserindoDadosEndereco(Endereco endereco)
+        public void InserindoDadosEnderecoAluno(Endereco endereco)
         {
             try{ 
          
-              _enderecoRepositorio.SalvarEndereco(endereco);
+              _enderecoRepositorio.SalvarEnderecoAluno(endereco);
 
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public void InserindoDadosEnderecoProfessor(Endereco endereco)
+        {
+            try
+            {
+
+                _enderecoRepositorio.SalvarEnderecoProfessor(endereco);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public Endereco RetornaEnderecoPorCpf(string cpf)
+        {
+            try
+            {
+                Endereco endereco = _enderecoRepositorio.BuscarEnderecoPorCpf(cpf);
+
+                return endereco;
+            }
+            catch (Exception ex)
+            {
                 throw new Exception(ex.Message);
             }
 

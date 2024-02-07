@@ -46,7 +46,7 @@ namespace Escola.Application.Services
             try
             {
                 ProfessorRepositorio professorRepositorio = new ProfessorRepositorio();
-                professorRepositorio.SalvarProfessor(nome, cpf, dataNascimento, disciplina);
+                professorRepositorio.SalvarProfessor(cpf, nome, dataNascimento, disciplina);
             }
             catch (Exception ex)
             {

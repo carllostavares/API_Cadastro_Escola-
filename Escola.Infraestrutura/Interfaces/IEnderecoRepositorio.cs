@@ -4,8 +4,8 @@ namespace Escola.Infraestrutura.Interfaces
 {
     public interface IEnderecoRepositorio
     {
-        void SalvarEndereco(Endereco endereco);
-
-
+        void SalvarEnderecoAluno(Endereco endereco);
+        void SalvarEnderecoProfessor(Endereco endereco);
+        Endereco BuscarEnderecoPorCpf(string cpf);
     }
 }
