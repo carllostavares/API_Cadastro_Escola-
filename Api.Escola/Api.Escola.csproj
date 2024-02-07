@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Escola.Application\Escola.Application.csproj" />
     <ProjectReference Include="..\Escola.CrossCutting\Escola.CrossCutting.csproj" />
+    <ProjectReference Include="..\Escola.Infraestrutura\Escola.Infraestrutura.csproj" />
 
   </ItemGroup>
 

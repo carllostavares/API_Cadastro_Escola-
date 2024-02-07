@@ -36,6 +36,7 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\NuGet.Frameworks.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Refit.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Refit.HttpClientFactory.dll
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\RestSharp.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll

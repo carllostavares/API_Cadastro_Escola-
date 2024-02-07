@@ -19,6 +19,7 @@ namespace Escola.Infraestrutura.Repositorios
                     using (MySqlCommand command = new MySqlCommand(scriptSql, connection))
                     {
                         command.Parameters.AddWithValue("@cep", endereco.Cep);
+                        command.Parameters.AddWithValue("@numero", endereco.Numero);
                         command.Parameters.AddWithValue("@logradouro", endereco.Logradouro);
                         command.Parameters.AddWithValue("@bairro", endereco.Bairro);
                         command.Parameters.AddWithValue("@localidade", endereco.Localidade);

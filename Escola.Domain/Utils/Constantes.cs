@@ -1,4 +1,4 @@
-﻿namespace Escola.Domain.Utils
+﻿''namespace Escola.Domain.Utils
 {
     public static class Constantes
     {
@@ -19,7 +19,7 @@
         }
         public static class EnderecoQuery
         {
-            public const string sqlInsertEndereco = "INSERT INTO tb_endereco(cep,logradouro,bairro,localidade,uf) VALUES(@cep,@logradouro, @bairro,@localidade,@uf)";
+            public const string sqlInsertEndereco = "INSERT INTO tb_endereco(cep,logradouro,numero,bairro,localidade,uf) VALUES(@cep,@logradouro,@numero, @bairro,@localidade,@uf)";
 
         }
 

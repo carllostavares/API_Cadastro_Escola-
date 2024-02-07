@@ -46,7 +46,6 @@ namespace Escola.Infraestrutura.Repositorios
         {
             string scriptSql = Constantes.Aluno.sqlSelecPorCpf;
 
-
             Alunos aluno = new Alunos();
             try
             {

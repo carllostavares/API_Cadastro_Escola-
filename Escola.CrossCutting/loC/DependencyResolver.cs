@@ -21,8 +21,8 @@ namespace Escola.CrossCutting.loC
         {
             services.AddScoped<IAlunoService, AlunoService>();
             services.AddScoped<IProfessorService, ProfessorService>();
-            services.AddScoped<IViaCepIntegracaoService, ViaCepIntegracaoServie>();
             services.AddScoped<IEnderecoService, EnderecoService>();
+            services.AddScoped<IIntegracaoCepService, IntegreacaoCepService>();
 
 
         }
@@ -33,6 +33,7 @@ namespace Escola.CrossCutting.loC
             services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
             services.AddScoped<IProfessorRepositorio, ProfessorRepositorio>();
             services.AddScoped<IEnderecoRepositorio, EnderecoRepositorio>();
+            services.AddScoped<IIntegracaoCepRepositorio, IntegracaoCepRepositorio>();
         }
     }
 }

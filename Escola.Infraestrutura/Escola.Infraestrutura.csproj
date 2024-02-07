@@ -15,6 +15,7 @@
     <PackageReference Include="MySql.Data" Version="8.3.0" />
     <PackageReference Include="Refit" Version="7.0.0" />
     <PackageReference Include="Refit.HttpClientFactory" Version="7.0.0" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
@@ -24,6 +25,10 @@
 
 	  <ProjectReference Include="..\Escola.Domain\Escola.Domain.csproj" />
 
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Refit\" />
   </ItemGroup>
 
 </Project>

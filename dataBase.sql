@@ -35,6 +35,7 @@ PRIMARY KEY (cep)
 CREATE TABLE tb_endereco(
 cep VARCHAR(20) NOT NULL,
 logradouro VARCHAR(200) NOT NULL,
+numero INT NOT NULL,
 bairro VARCHAR(100) NOT NULL,
 localidade VARCHAR(100),
 uf VARCHAR(100) NOT NULL,
@@ -47,7 +48,7 @@ INSERT INTO tb_endereco(cep,logradouro, complemento,bairro,localidade,uf,ibge,gi
 
 
 
-SET SQL_SAFE_UPDATES = 0;
+SET SQL_SAFE_UPDATES =0;
 SELECT *FROM tb_endereco;
 SELECT * FROM tb_aluno;
 SELECT * FROM tb_professor;

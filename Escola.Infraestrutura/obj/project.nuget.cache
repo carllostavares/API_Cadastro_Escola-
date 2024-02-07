@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rOgpBGNvol1+aej7pQu1vy1O4qcmjrcY2rxy2+NIrwAu+SXDKO2meGts8yx6VQsEw+Q0pRUprW7l2ANU3nO7ag==",
+  "dgSpecHash": "/TMiVbHvgjqqQq/WQub7Iou/CRnwlZ78F3rmDwxFZsfuA77ZoCfEsYVEWgFLinzAMEX8Rqa0FCc526HK8WLguw==",
   "success": true,
   "projectFilePath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "C:\\Users\\432399\\.nuget\\packages\\nuget.frameworks\\6.5.0\\nuget.frameworks.6.5.0.nupkg.sha512",
     "C:\\Users\\432399\\.nuget\\packages\\refit\\7.0.0\\refit.7.0.0.nupkg.sha512",
     "C:\\Users\\432399\\.nuget\\packages\\refit.httpclientfactory\\7.0.0\\refit.httpclientfactory.7.0.0.nupkg.sha512",
+    "C:\\Users\\432399\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
     "C:\\Users\\432399\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\432399\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\432399\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

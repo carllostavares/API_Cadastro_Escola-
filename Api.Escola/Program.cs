@@ -1,9 +1,5 @@
-
-using Escola.Application.Interfaces;
-using Escola.Application.Services;
 using Escola.CrossCutting.loC;
-using Refit;
-using Escola.Infraestrutura.Interfaces;
+using Escola.Infraestrutura.Repositorios;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,11 +13,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDependencyResolver();
-
-builder.Services.AddRefitClient<IViaCepIntegracaoRefilt>().ConfigureHttpClient(c =>
-{
-    c.BaseAddress = new Uri("https://viacep.com.br/");
-});
 
 var app = builder.Build();
 

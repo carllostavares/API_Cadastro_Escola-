@@ -38,6 +38,9 @@
               },
               "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.CrossCutting\\Escola.CrossCutting.csproj": {
                 "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.CrossCutting\\Escola.CrossCutting.csproj"
+              },
+              "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj": {
+                "projectPath": "C:\\Users\\432399\\OneDrive - Localiza\\Área de Trabalho\\API_escola\\API_Cadastro_Escola-\\Escola.Infraestrutura\\Escola.Infraestrutura.csproj"
               }
             }
           }
@@ -469,6 +472,10 @@
             "Refit.HttpClientFactory": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

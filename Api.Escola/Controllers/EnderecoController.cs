@@ -1,4 +1,5 @@
 ﻿using Escola.Application.Interfaces;
+using Escola.Application.Services;
 using Escola.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,11 +9,12 @@ namespace api.Escola.Controllers
     [ApiController]
     public class EnderecoController : ControllerBase
     {
-        private readonly IViaCepIntegracaoService _viaCepIntegracao;
+        private readonly IIntegracaoCepService _integracaoCepService;
         private readonly IEnderecoService _enderecoService;
-        public EnderecoController(IViaCepIntegracaoService viaCepIntegracao,IEnderecoService enderecoService)
+
+        public EnderecoController(IIntegracaoCepService integracaoCepService,IEnderecoService enderecoService)
         {
-             _viaCepIntegracao = viaCepIntegracao;
+            _integracaoCepService = integracaoCepService;
             _enderecoService = enderecoService;
         }
 
@@ -20,32 +22,32 @@ namespace api.Escola.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public async Task<ActionResult<Endereco>> SalvarEndereco(string cep)
+        public IActionResult SalvarEndereco(string cep,int numero)
         {
 
-            var meuCep = await _viaCepIntegracao.RetornarDadosViaCep(cep);
+            var meuCep =  _integracaoCepService.RetornaCep(cep);
+
             if(meuCep == null)
             {
                 return BadRequest("CEP não váliddo!");
 
             }
-            
+            meuCep.Numero = numero;
             _enderecoService.InserindoDadosEndereco(meuCep);
 
             return StatusCode(StatusCodes.Status201Created,meuCep);
 
-            //return (meuCep);
 
         }
 
-        [HttpGet("{cep}")]
+       /* [HttpGet("{cep}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult Buscarndereco(string cep)
         {
             return Ok();
 
-        }
+        }*/
 
     }
 }
