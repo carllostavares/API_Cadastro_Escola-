@@ -22,7 +22,7 @@ namespace api.Escola.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public IActionResult SalvarEndereco(string cep,int numero)
+        public IActionResult SalvarEndereco(string cep,int numero,string cpf)
         {
 
             var meuCep =  _integracaoCepService.RetornaCep(cep);
@@ -33,6 +33,7 @@ namespace api.Escola.Controllers
 
             }
             meuCep.Numero = numero;
+            meuCep.Cpf = cpf;
             _enderecoService.InserindoDadosEndereco(meuCep);
 
             return StatusCode(StatusCodes.Status201Created,meuCep);

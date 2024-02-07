@@ -13,23 +13,10 @@ id_cpf_professor VARCHAR(14) NOT NULL,
 nome_professor VARCHAR(200),	
 data_nascimento DATE  NOT NULL,
 disciplina VARCHAR(100) NOT NULL,
+id_cpf_aluno VARCHAR(14) NOT NULL,
 
 PRIMARY  KEY( id_cpf_professor)
-);
 
-CREATE TABLE tb_endereco(
-cep VARCHAR(20) NOT NULL,
-logradouro VARCHAR(200) NOT NULL,
-complemento VARCHAR(100),
-bairro VARCHAR(100) NOT NULL,
-localidade VARCHAR(100),
-uf VARCHAR(100) NOT NULL,
-ibge VARCHAR (100),
-gia VARCHAR(100),
-ddd VARCHAR(100) NOT NULL,
-siafi VARCHAR(100),
-
-PRIMARY KEY (cep)
 );
 
 CREATE TABLE tb_endereco(
@@ -39,8 +26,13 @@ numero INT NOT NULL,
 bairro VARCHAR(100) NOT NULL,
 localidade VARCHAR(100),
 uf VARCHAR(100) NOT NULL,
+id_cpf_aluno VARCHAR(14) NOT NULL,
 
-PRIMARY KEY (cep)
+
+CONSTRAINT fk_tb_aluno	
+FOREIGN KEY (id_cpf_aluno)
+REFERENCES tb_aluno (id_cpf_aluno)
+
 );
 
 INSERT INTO tb_endereco(cep,logradouro, complemento,bairro,localidade,uf,ibge,gia,ddd,siafi)

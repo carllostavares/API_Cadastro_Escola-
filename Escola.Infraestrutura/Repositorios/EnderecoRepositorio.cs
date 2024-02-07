@@ -24,6 +24,8 @@ namespace Escola.Infraestrutura.Repositorios
                         command.Parameters.AddWithValue("@bairro", endereco.Bairro);
                         command.Parameters.AddWithValue("@localidade", endereco.Localidade);
                         command.Parameters.AddWithValue("@uf", endereco.Uf);
+                        command.Parameters.AddWithValue("@cpf", endereco.Cpf);
+
 
 
                         command.ExecuteNonQuery();

@@ -22,6 +22,8 @@ namespace Escola.Domain.Entities
         [JsonPropertyName("uf")]
         public string Uf { get; set; }
 
+        [Required(ErrorMessage = "O campo cpf é obrigatório!")]
+        public string? Cpf { get; set; }
 
     }
 }
