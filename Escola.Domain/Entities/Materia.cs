@@ -12,7 +12,7 @@ namespace Escola.Domain.Entities
         public string? name { get; set; }
 
         [Required(ErrorMessage = "O campo carga horario é obrigatódio!")]
-        public string? cargaHorario { get; set; }
+        public string? cargaHoraria { get; set; }
 
         [Required(ErrorMessage = "O campo cpf professor é obrigatódio!")]
         public string? Cpf { get; set; }
