@@ -8,7 +8,7 @@ namespace Escola.Infraestrutura.Repositorios
 {
     public class materiaRepositorio : IMateriaRepositorio
     {
-        public void SalvarMateria(Materia materia)
+        public Materia SalvarMateria(Materia materia)
         {
             string scriptSql = Constantes.MateriaQuery.sqlInserMateria;
             try
@@ -24,6 +24,7 @@ namespace Escola.Infraestrutura.Repositorios
 
 
                         command.ExecuteNonQuery();
+                        return materia;
                     }
                 }
             }
