@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Escola.Infraestrutura", "Es
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Escola.Application", "Escola.Application\Escola.Application.csproj", "{05E0A253-CF90-4732-A7CD-E8B16B56064B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escola.CrossCutting", "Escola.CrossCutting\Escola.CrossCutting.csproj", "{421B8261-1125-4E74-AD32-00FE569FFCED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Escola.CrossCutting", "Escola.CrossCutting\Escola.CrossCutting.csproj", "{421B8261-1125-4E74-AD32-00FE569FFCED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

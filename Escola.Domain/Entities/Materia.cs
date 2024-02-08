@@ -6,13 +6,13 @@ namespace Escola.Domain.Entities
     {
         [Key]
         [Required(ErrorMessage ="O campo nome é obrigatódio!")]
-        public string? id { get; set; }
+        public string? Id { get; set; }
 
         [Required(ErrorMessage = "O campo nome é obrigatódio!")]
-        public string? name { get; set; }
+        public string? Name { get; set; }
 
         [Required(ErrorMessage = "O campo carga horario é obrigatódio!")]
-        public string? cargaHoraria { get; set; }
+        public int? CargaHoraria { get; set; }
 
         [Required(ErrorMessage = "O campo cpf professor é obrigatódio!")]
         public string? Cpf { get; set; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Escola.Application.Services
 {
-    internal class MateriaService : IMateriaService
+    public class MateriaService : IMateriaService
     {
         private readonly IMateriaRepositorio _materiaRepositorio;
 
@@ -18,11 +18,16 @@ namespace Escola.Application.Services
             _materiaRepositorio = materiaRepositorio;
         }
 
-        public Materia InserirMateria(Materia materia)
+        public void InserirMateria(string id, string nome, int cargaHoraria, string cpf)
         {
-            var novaMateria = _materiaRepositorio.SalvarMateria(materia);
+            Materia materia = new Materia();
+            materia.Id = id;
+            materia.Name = nome;
+            materia.CargaHoraria = cargaHoraria;
+            materia.Cpf = cpf;
 
-            return novaMateria;
+            _materiaRepositorio.SalvarMateria(materia);
+
         }
     }
 }

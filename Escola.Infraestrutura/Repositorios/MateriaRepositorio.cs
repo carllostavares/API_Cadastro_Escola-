@@ -6,25 +6,25 @@ using MySql.Data.MySqlClient;
 
 namespace Escola.Infraestrutura.Repositorios
 {
-    public class materiaRepositorio : IMateriaRepositorio
+    public class MateriaRepositorio : IMateriaRepositorio
     {
-        public Materia SalvarMateria(Materia materia)
+        public void SalvarMateria(Materia materia)
         {
-            string scriptSql = Constantes.MateriaQuery.sqlInserMateria;
+            string scriptSql = Constantes.MateriaQuery.sqlInsertMateria;
             try
             {
                 using (MySqlConnection connection = BancoMysql.AbrirConexao())
                 {
                     using (MySqlCommand command = new MySqlCommand(scriptSql, connection))
                     {
-                        command.Parameters.AddWithValue("@id",materia.id);
-                        command.Parameters.AddWithValue("@nome",materia.name);
-                        command.Parameters.AddWithValue("@carcaHoraria", materia.cargaHoraria);
+                        command.Parameters.AddWithValue("@id",materia.Id);
+                        command.Parameters.AddWithValue("@nome",materia.Name);
+                        command.Parameters.AddWithValue("@carcaHoraria", materia.CargaHoraria);
                         command.Parameters.AddWithValue("@cpf", materia.Cpf);
-
+                        command.Prepare();
 
                         command.ExecuteNonQuery();
-                        return materia;
+
                     }
                 }
             }

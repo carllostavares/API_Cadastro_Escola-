@@ -28,7 +28,7 @@
 
         public static class MateriaQuery
         {
-            public const string sqlInserMateria = " INSERT INTO tb_materia(id_materia,nome,carga_horaria,id_cpf_professor) VALUES(@id, @nome,@cargaHoraria,@cpf)";
+            public const string sqlInsertMateria = " INSERT INTO tb_materia(id_materia,nome,carga_horaria,id_cpf_professor) VALUES(@id , @nome , @carcaHoraria , @cpf)";
         }
 
     }

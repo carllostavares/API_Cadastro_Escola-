@@ -4,6 +4,6 @@ namespace Escola.Application.Interfaces
 {
     public interface IMateriaService
     {
-        public Materia InserirMateria(Materia materia);
+        public void InserirMateria(string id, string nome, int cargaHoraria, string cpf);
     }
 }
