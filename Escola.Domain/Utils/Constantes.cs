@@ -5,9 +5,9 @@
         public static class Aluno
         {
  
-            public const string sqlSelect = "select id_cpf_aluno, nome_aluno, data_nascimento from tb_aluno";
-            public const string sqlSelecPorCpf = "select id_cpf_aluno, nome_aluno, data_nascimento from tb_aluno where id_cpf_aluno =  @cpf  ";
-            public const string sqlInsertAluno = "INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento) VALUES(@cpf,@nome,@data_nascimento)";
+            public const string sqlSelect = "select id_cpf_aluno, nome_aluno, data_nascimento,id_materia from tb_aluno";
+            public const string sqlSelecPorCpf = "select id_cpf_aluno, nome_aluno, data_nascimento, id_materia from tb_aluno where id_cpf_aluno =  @cpf  ";
+            public const string sqlInsertAluno = "INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento,id_materia) VALUES(@cpf,@nome,@data_nascimento, @materia)";
 
         }
         public static class ProfessorQuery

@@ -27,6 +27,7 @@ namespace Escola.Infraestrutura.Repositorios
                                 aluno.Cpf = retornaSelect["id_cpf_aluno"].ToString();
                                 aluno.Nome = retornaSelect["nome_aluno"].ToString();
                                 aluno.DataNascimento = retornaSelect["data_nascimento"].ToString();
+                                aluno.IdMateria = retornaSelect["id_materia"].ToString();
                                 alunos.Add(aluno);
                             }
                             return alunos;
@@ -62,6 +63,8 @@ namespace Escola.Infraestrutura.Repositorios
                                 aluno.Cpf = retornaSelect["id_cpf_aluno"].ToString();
                                 aluno.Nome = retornaSelect["nome_aluno"].ToString();
                                 aluno.DataNascimento = retornaSelect["data_nascimento"].ToString();
+                                aluno.IdMateria = retornaSelect["id_materia"].ToString();
+
 
                             }
                         }
@@ -88,6 +91,8 @@ namespace Escola.Infraestrutura.Repositorios
                         command.Parameters.AddWithValue("@cpf", cpf);
                         command.Parameters.AddWithValue("@nome", nome);
                         command.Parameters.AddWithValue("@data_nascimento", dataNascimento);
+                        command.Parameters.AddWithValue("@materia", dataNascimento);
+
 
                         command.ExecuteNonQuery();
                     }

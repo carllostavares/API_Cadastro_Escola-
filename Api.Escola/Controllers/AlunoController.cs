@@ -15,7 +15,7 @@ namespace Api_Escola.Controllers
         }
 
 
-        [HttpGet("buscar")]
+        [HttpGet("")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -28,7 +28,7 @@ namespace Api_Escola.Controllers
             return Ok(alunos);
         }
 
-        [HttpGet("buscar/cpf")]
+        [HttpGet("cpf")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -40,7 +40,7 @@ namespace Api_Escola.Controllers
             return Ok(retornoAluno);
         }
 
-        [HttpPost("salvar")]
+        [HttpPost("")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]

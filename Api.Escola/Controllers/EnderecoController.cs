@@ -1,11 +1,9 @@
 ﻿using Escola.Application.Interfaces;
-using Escola.Application.Services;
-using Escola.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Escola.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/endereco")]
     [ApiController]
     public class EnderecoController : ControllerBase
     {
@@ -18,7 +16,7 @@ namespace api.Escola.Controllers
             _enderecoService = enderecoService;
         }
 
-        [HttpPost("endereco/aluno")]
+        [HttpPost("aluno")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -41,7 +39,7 @@ namespace api.Escola.Controllers
 
         }
 
-        [HttpPost("endereco/professor")]
+        [HttpPost("professor")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -64,7 +62,7 @@ namespace api.Escola.Controllers
 
         }
 
-        [HttpGet("Endereco/cpf")]
+        [HttpGet("cpf")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult BuscarEnderecoPorCpf(string cpf)

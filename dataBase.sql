@@ -4,8 +4,12 @@ CREATE TABLE tb_aluno(
 id_cpf_aluno VARCHAR(11) NOT NULL,
 nome_aluno VARCHAR(200),	
 data_nascimento DATE  NOT NULL,
+id_materia VARCHAR(200),
 
-PRIMARY  KEY( id_cpf_aluno)
+PRIMARY  KEY( id_aluno),
+
+FOREIGN KEY (id_materia)
+REFERENCES tb_materia (id_materia)
 );
 
 CREATE TABLE tb_professor(
@@ -50,16 +54,23 @@ FOREIGN KEY (id_cpf_professor)
 REFERENCES tb_professor (id_cpf_professor)
 );
 
- 
-INSERT INTO tb_materia(id_materia,nome,carga_horaria,id_cpf_professor) VALUES("123", "Artes", 60,"22222222222222");
+ INSERT INTO tb_materia (id_materia,nome,carga_horaria,id_cpf_professor)VALUES
+ ("12","Historia da Amériaca",60,"89555555501"),("13","Geologia",40,"55555555577");
 
-INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento) VALUES("11122233366","nome","2099-05-30");
+INSERT INTO tb_professor(id_cpf_professor,nome_professor,data_nascimento,disciplina) 
+VALUES("55555555577","Fia","1998-07-15","geografia"),("89555555501","Otavio","1998-07-15","historia"),
+("00555555501","Otavio","1998-07-15","historia") ;
+
+INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento) 
+VALUES("11122233366","Ricardo","2099-05-30"),("11122233377","Paulo","2099-05-22"),
+("11122233300","Monica","2199-10-30");
 
 select * from tb_aluno where id_cpf_aluno = "55555555555";
 select cep,logradouro,numero,bairro,localidade,uf from tb_endereco where id_cpf_aluno = "55555555555" OR id_cpf_professor = "55555555555";
 
 select * FROM tb_endereco where id_cpf_aluno = 77788899944;
 
+select * from tb_materia;
 select * from tb_endereco;
 SET SQL_SAFE_UPDATES =0;
 SELECT *FROM tb_endereco;

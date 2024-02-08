@@ -8,7 +8,7 @@ namespace Api_Escola.Controllers
     [Route("api/professor")]
     public class ProfessorController : ControllerBase
     {
-        [HttpGet("buscar")]
+        [HttpGet("")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -21,7 +21,7 @@ namespace Api_Escola.Controllers
             return Ok(Professores);
         }
 
-        [HttpGet("buscar/cpf")]
+        [HttpGet("cpf")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -34,7 +34,7 @@ namespace Api_Escola.Controllers
             return Ok(retornoProfessor);
         }
 
-        [HttpPost("salvar")]
+        [HttpPost("")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]

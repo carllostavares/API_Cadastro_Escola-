@@ -17,5 +17,9 @@ namespace Escola.Domain.Entities
         [StringLength(300)]
         public string ?DataNascimento { get; set; }
 
+        [Required(ErrorMessage = "O campo IdMateria é obrigatório!")]
+        [StringLength(300)]
+        public string? IdMateria { get; set; }
+
     }
 }
