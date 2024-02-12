@@ -1,4 +1,4 @@
-﻿using Escola.Domain.Entities;
+﻿ using Escola.Domain.Entities;
 using Escola.Domain.Utils;
 using Escola.Infraestrutura.SqlDataBase;
 using Escola.Infraestrutura.Interfaces;

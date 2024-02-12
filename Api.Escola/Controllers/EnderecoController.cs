@@ -16,7 +16,7 @@ namespace api.Escola.Controllers
             _enderecoService = enderecoService;
         }
 
-        [HttpPost("aluno")]
+       /* [HttpPost("aluno")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -30,6 +30,7 @@ namespace api.Escola.Controllers
                 return BadRequest("CEP não váliddo!");
 
             }
+
             meuCep.Numero = numero;
             meuCep.Cpf = cpf;
             _enderecoService.InserindoDadosEnderecoAluno(meuCep);
@@ -37,7 +38,7 @@ namespace api.Escola.Controllers
             return StatusCode(StatusCodes.Status201Created,meuCep);
 
 
-        }
+        }*/
 
         [HttpPost("professor")]
         [ProducesResponseType(StatusCodes.Status200OK)]

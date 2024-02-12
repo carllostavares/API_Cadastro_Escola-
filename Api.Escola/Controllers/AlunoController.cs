@@ -8,10 +8,15 @@ namespace Api_Escola.Controllers
     public class AlunoController : ControllerBase
     {
         private readonly IAlunoService _alunoService;
+        private readonly IIntegracaoCepService _integracaoCepService;
+        private readonly IEnderecoService _enderecoService;
 
-        public AlunoController(IAlunoService alunoService)
+        public AlunoController(IAlunoService alunoService, IIntegracaoCepService integracaoCepService,
+            IEnderecoService enderecoService)
         {
             _alunoService = alunoService;
+            _enderecoService = enderecoService;
+            _integracaoCepService = integracaoCepService;
         }
 
 
@@ -44,12 +49,23 @@ namespace Api_Escola.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public IActionResult SalvarAluno( string cpf, string nome, string dataNascimento)
+        public IActionResult SalvarAluno( string cpf, string nome, string dataNascimento, string cep, string numeroCasa)
         {
             //AlunoService novoAluno = new AlunoService();
             //novoAluno.InserindoDadosAluno(cpf, nome, dataNascimento);
+
+            var meuCep = _integracaoCepService.RetornaCep(cep);
+
+            if(meuCep == null)
+            {
+                return BadRequest("Cep inválido!");
+            }
+
+            meuCep.Cpf = cpf;
+            meuCep.Numero = numeroCasa;
             
             _alunoService.InserindoDadosAluno(cpf, nome, dataNascimento);
+            _enderecoService.InserindoDadosEnderecoAluno(meuCep);
 
 
             return StatusCode(StatusCodes.Status201Created);
