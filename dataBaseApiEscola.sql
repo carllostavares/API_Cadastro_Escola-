@@ -47,15 +47,9 @@ id_cpf_professor VARCHAR(11),
 PRIMARY KEY (id_materia),
 	
 FOREIGN KEY (id_cpf_professor)
-REFERENCES tb_professor (id_cpf_professor),
+REFERENCES tb_professor (id_cpf_professor)
 
 );
-
-select * from tb_materia;
-
-
-
-
 
  INSERT INTO tb_materia (id_materia,nome,carga_horaria,id_cpf_professor)VALUES
  ("12","Historia da Amériaca",60,"89555555501"),("13","Geologia",40,"55555555577");

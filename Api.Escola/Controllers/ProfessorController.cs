@@ -8,15 +8,21 @@ namespace Api_Escola.Controllers
     [Route("api/professor")]
     public class ProfessorController : ControllerBase
     {
+        private readonly IProfessorService _professorService;
+
+        public ProfessorController(IProfessorService professorService)
+        {
+            _professorService = professorService;
+        }
+
         [HttpGet("")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
         public IActionResult BuscaProfessores()
         {
-            ProfessorService professor = new ProfessorService();
 
-            var Professores = professor.RetornarProfessor();
+            var Professores = _professorService.RetornarProfessor();
 
             return Ok(Professores);
         }
@@ -27,9 +33,8 @@ namespace Api_Escola.Controllers
         [ProducesDefaultResponseType]
         public IActionResult BuscaProfessores(string cpf)
         {
-            ProfessorService professor = new ProfessorService();
 
-            var retornoProfessor = professor.RetornarProfessorPorId(cpf);
+            var retornoProfessor = _professorService.RetornarProfessorPorId(cpf);
 
             return Ok(retornoProfessor);
         }
@@ -40,9 +45,8 @@ namespace Api_Escola.Controllers
         [ProducesDefaultResponseType]
         public IActionResult SalvarProfessor(string nome, string cpf, string dataNascimento, string disciplina)
         {
-            ProfessorService novoProfessor = new ProfessorService();
 
-            novoProfessor.InserindoDadosProfessor(nome, cpf, dataNascimento, disciplina);
+            _professorService.InserindoDadosProfessor(nome, cpf, dataNascimento, disciplina);
 
             return StatusCode(StatusCodes.Status201Created);
         }

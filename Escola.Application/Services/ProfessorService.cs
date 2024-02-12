@@ -1,5 +1,6 @@
 ﻿using Escola.Application.Interfaces;
 using Escola.Domain.Entities;
+using Escola.Infraestrutura.Interfaces;
 using Escola.Infraestrutura.Repositorios;
 
 
@@ -9,12 +10,18 @@ namespace Escola.Application.Services
 
     public class ProfessorService : IProfessorService
     {
+        private readonly IProfessorRepositorio _professorRepositorio;
+
+        public ProfessorService(IProfessorRepositorio professorRepositorio)
+        {
+            _professorRepositorio = professorRepositorio;
+        }
+
         public List<Professor> RetornarProfessor()
         {
             try
             {
-                ProfessorRepositorio ProfessorRepositorio = new ProfessorRepositorio();
-                var professores = ProfessorRepositorio.BuscarProfessor();
+                var professores = _professorRepositorio.BuscarProfessor();
                 return professores;
             }
             catch (Exception ex)
@@ -29,8 +36,7 @@ namespace Escola.Application.Services
         {
             try
             {
-                ProfessorRepositorio professorRepositorio = new ProfessorRepositorio();
-                var professor = professorRepositorio.BuscarProfessorPorId(cpf);
+                var professor = _professorRepositorio.BuscarProfessorPorId(cpf);
                 return professor;
             }
             catch (Exception ex)
@@ -45,8 +51,7 @@ namespace Escola.Application.Services
         {
             try
             {
-                ProfessorRepositorio professorRepositorio = new ProfessorRepositorio();
-                professorRepositorio.SalvarProfessor(cpf, nome, dataNascimento, disciplina);
+                _professorRepositorio.SalvarProfessor(cpf, nome, dataNascimento, disciplina);
             }
             catch (Exception ex)
             {
