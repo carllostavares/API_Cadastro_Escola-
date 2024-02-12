@@ -1,11 +1,6 @@
 ﻿using Escola.Application.Interfaces;
 using Escola.Domain.Entities;
 using Escola.Infraestrutura.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Escola.Application.Services
 {
@@ -20,13 +15,37 @@ namespace Escola.Application.Services
 
         public void InserirMateria(string id, string nome, int cargaHoraria, string cpf)
         {
-            Materia materia = new Materia();
-            materia.Id = id;
-            materia.Name = nome;
-            materia.CargaHoraria = cargaHoraria;
-            materia.Cpf = cpf;
+            try
+            {
+                Materia materia = new Materia();
+                materia.Id = id;
+                materia.Name = nome;
+                materia.CargaHoraria = cargaHoraria;
+                materia.Cpf = cpf;
 
-            _materiaRepositorio.SalvarMateria(materia);
+                _materiaRepositorio.SalvarMateria(materia);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
+            }
+
+
+        }
+
+        public List<Materia> RetornaMateria()
+        {
+            try
+            {
+                var materias = _materiaRepositorio.BuscaMateria();
+                return materias;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw new Exception(ex.Message);
+            }
 
         }
     }

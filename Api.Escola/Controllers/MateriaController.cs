@@ -25,5 +25,16 @@ namespace api.Escola.Controllers
 
             return StatusCode(StatusCodes.Status201Created);
         }
+
+        [HttpGet("")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
+        public IActionResult BuscarMateria()
+        {
+            var materias = _materiaService.RetornaMateria();
+
+            return Ok(materias);
+        }
     }
 }

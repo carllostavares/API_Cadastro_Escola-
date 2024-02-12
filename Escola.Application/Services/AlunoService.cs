@@ -1,6 +1,5 @@
 ﻿using Escola.Application.Interfaces;
 using Escola.Domain.Entities;
-using Escola.Infraestrutura;
 using Escola.Infraestrutura.Interfaces;
 
 
@@ -66,7 +65,7 @@ namespace Escola.Application.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                throw new Exception(ex.Message);
+                    throw new Exception(ex.Message);
             }
 
         }

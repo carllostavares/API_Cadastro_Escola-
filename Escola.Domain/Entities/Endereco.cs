@@ -8,7 +8,7 @@ namespace Escola.Domain.Entities
         [JsonPropertyName("cep")]
         public string? Cep { get; set; }
 
-        public string? Numero { get; set; }
+        public string Numero { get; set; }
 
         [JsonPropertyName("logradouro")]
         public string? Logradouro { get; set; }

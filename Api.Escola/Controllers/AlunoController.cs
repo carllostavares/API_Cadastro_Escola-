@@ -19,7 +19,7 @@ namespace Api_Escola.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public IActionResult BuscaAlunos()
+        public IActionResult BuscarAlunos()
         {
             //AlunoService aluno = new AlunoService();
             //var alunos = aluno.RetornarAluno();
@@ -32,7 +32,7 @@ namespace Api_Escola.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public IActionResult BuscaAlunos(string cpf)
+        public IActionResult BuscarAlunosPorCpf(string cpf)
         {
             //AlunoService aluno = new AlunoService();
             //var retornoAluno =aluno.RetornarAlunoPorId(cpf);
@@ -50,6 +50,7 @@ namespace Api_Escola.Controllers
             //novoAluno.InserindoDadosAluno(cpf, nome, dataNascimento);
             
             _alunoService.InserindoDadosAluno(cpf, nome, dataNascimento);
+
 
             return StatusCode(StatusCodes.Status201Created);
         }

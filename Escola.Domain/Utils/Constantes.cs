@@ -5,9 +5,9 @@
         public static class Aluno
         {
  
-            public const string sqlSelect = "select id_cpf_aluno, nome_aluno, data_nascimento,id_materia from tb_aluno";
-            public const string sqlSelecPorCpf = "select id_cpf_aluno, nome_aluno, data_nascimento, id_materia from tb_aluno where id_cpf_aluno =  @cpf  ";
-            public const string sqlInsertAluno = "INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento,id_materia) VALUES(@cpf,@nome,@data_nascimento, @materia)";
+            public const string sqlSelect = "select id_cpf_aluno, nome_aluno, data_nascimento from tb_aluno";
+            public const string sqlSelecPorCpf = "select id_cpf_aluno, nome_aluno, data_nascimento from tb_aluno where id_cpf_aluno =  @cpf  ";
+            public const string sqlInsertAluno = "INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento) VALUES(@cpf,@nome,@data_nascimento)";
 
         }
         public static class ProfessorQuery
@@ -29,6 +29,7 @@
         public static class MateriaQuery
         {
             public const string sqlInsertMateria = " INSERT INTO tb_materia(id_materia,nome,carga_horaria,id_cpf_professor) VALUES(@id , @nome , @carcaHoraria , @cpf)";
+            public const string sqlSelectMateria = "SELECT id_materia,nome, carga_horaria,id_cpf_professor FROM tb_materia";
         }
 
     }
