@@ -40,6 +40,7 @@ namespace api.Escola.Controllers
 
         }*/
 
+        /*
         [HttpPost("professor")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -61,7 +62,7 @@ namespace api.Escola.Controllers
             return StatusCode(StatusCodes.Status201Created, meuCep);
 
 
-        }
+        }*/
 
         [HttpGet("cpf")]
         [ProducesResponseType(StatusCodes.Status200OK)]

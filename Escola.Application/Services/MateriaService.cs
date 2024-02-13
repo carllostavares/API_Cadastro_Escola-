@@ -21,7 +21,7 @@ namespace Escola.Application.Services
                 materia.Id = id;
                 materia.Name = nome;
                 materia.CargaHoraria = cargaHoraria;
-                materia.Cpf = cpf;
+                materia.CpfProfessor = cpf;
 
                 _materiaRepositorio.SalvarMateria(materia);
             }

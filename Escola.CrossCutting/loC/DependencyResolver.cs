@@ -37,6 +37,7 @@ namespace Escola.CrossCutting.loC
             services.AddScoped<IIntegracaoCepRepositorio, IntegracaoCepRepositorio>();
             services.AddScoped<IMateriaRepositorio, MateriaRepositorio>();
             services.AddScoped<IEnderecoRepositorio, EnderecoRepositorio>();
+            services.AddScoped<IClasseRepositorio, ClasseRepositorio>();
         }
     }
 }

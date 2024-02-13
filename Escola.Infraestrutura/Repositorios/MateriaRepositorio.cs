@@ -27,7 +27,7 @@ namespace Escola.Infraestrutura.Repositorios
                                 materia.Id = (string)retornaSelect["id_materia"];
                                 materia.Name = retornaSelect["nome"].ToString();
                                 materia.CargaHoraria = ((int)retornaSelect["carga_horaria"]);
-                                materia.Cpf = retornaSelect["id_cpf_professor"].ToString();
+                                materia.CpfProfessor = retornaSelect["id_cpf_professor"].ToString();
                                 materias.Add(materia);
                             }
                             return materias;
@@ -54,7 +54,7 @@ namespace Escola.Infraestrutura.Repositorios
                         command.Parameters.AddWithValue("@id",materia.Id);
                         command.Parameters.AddWithValue("@nome",materia.Name);
                         command.Parameters.AddWithValue("@carcaHoraria", materia.CargaHoraria);
-                        command.Parameters.AddWithValue("@cpf", materia.Cpf);
+                        command.Parameters.AddWithValue("@cpf", materia.CpfProfessor);
                         command.Prepare();
 
                         command.ExecuteNonQuery();
