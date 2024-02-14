@@ -1,4 +1,5 @@
-﻿using Escola.Application.Interfaces;
+﻿
+using Escola.Application.Interfaces;
 using Escola.Application.Services;
 using Escola.Infraestrutura.Interfaces;
 using Escola.Infraestrutura.Repositorios;
@@ -25,6 +26,7 @@ namespace Escola.CrossCutting.loC
             services.AddScoped<IIntegracaoCepService, IntegreacaoCepService>();
             services.AddScoped<IMateriaService,MateriaService>();
             services.AddScoped<IEnderecoService, EnderecoService>();
+            services.AddScoped<IClasseService, ClasseService>();
 
         }
 

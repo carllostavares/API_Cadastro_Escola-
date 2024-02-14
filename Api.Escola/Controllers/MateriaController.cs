@@ -19,7 +19,7 @@ namespace api.Escola.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public IActionResult AdicionarMateria(string id, string nome, int cargaHoraria, string cpf)
+        public IActionResult AdicionarMateria(int id, string nome, int cargaHoraria, string cpf)
         {
             _materiaService.InserirMateria(id, nome, cargaHoraria, cpf);
 

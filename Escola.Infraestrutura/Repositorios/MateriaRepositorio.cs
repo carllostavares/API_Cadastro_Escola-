@@ -24,7 +24,7 @@ namespace Escola.Infraestrutura.Repositorios
                             while (retornaSelect.Read())
                             {
                                 Materia materia = new Materia();
-                                materia.Id = (string)retornaSelect["id_materia"];
+                                materia.Id = (int)retornaSelect["id_materia"];
                                 materia.Name = retornaSelect["nome"].ToString();
                                 materia.CargaHoraria = ((int)retornaSelect["carga_horaria"]);
                                 materia.CpfProfessor = retornaSelect["id_cpf_professor"].ToString();

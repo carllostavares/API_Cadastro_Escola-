@@ -6,7 +6,7 @@ namespace Escola.Domain.Entities
     {
         [Key]
         [Required(ErrorMessage ="O campo nome é obrigatódio!")]
-        public string? Id { get; set; }
+        public int? Id { get; set; }
 
         [Required(ErrorMessage = "O campo nome é obrigatódio!")]
         public string? Name { get; set; }

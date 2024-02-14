@@ -75,17 +75,26 @@ REFERENCES tb_materia (id_materia)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 );
-INSERT INTO tb_classe (sala,id_materia, id_cpf_aluno) VALUES(01,"12", "11756898974"),(01,"12", "88888888888");
+
+SELECT tb_classe.sala, tb_aluno.nome_aluno, tb_materia.nome ,tb_professor.nome_professor
+FROM tb_classe
+	INNER JOIN tb_aluno ON tb_aluno.id_cpf_aluno = tb_classe.id_cpf_aluno 
+		INNER JOIN tb_materia ON tb_materia.id_materia = tb_classe.id_materia
+			INNER JOIN tb_professor ON tb_materia.id_cpf_professor = tb_professor.id_cpf_professor;
+
+INSERT INTO tb_classe (sala,id_materia, id_cpf_aluno) VALUES(01,"12", "11756898974"),(01,"12", "88888888888"),
+(01,"12", "11122233366"),(01,"12", "11122233377"),(02,"13", "11122233300"),(02,"13", "10022233300"),(03,"14", "77022233300");
+
  INSERT INTO tb_materia (id_materia,nome,carga_horaria,id_cpf_professor)VALUES
- ("12","Historia da Amériaca",60,"66548798512"),("13","Geologia",40,"55555555577");
+ ("14","Historia da Amériaca",60,"66548798512"),("13","Geologia",40,"55555555577");
 
 INSERT INTO tb_professor(id_cpf_professor,nome_professor,data_nascimento,disciplina) 
 VALUES("55555555577","Fia","1998-07-15","geografia"),("89555555501","Otavio","1998-07-15","historia"),
 ("00555555501","Otavio","1998-07-15","historia") ;
 
-INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento,id_materia) 
-VALUES("11122233366","Ricardo","2099-05-30","01"),("11122233377","Paulo","2099-05-22","13"),
-("11122233300","Monica","2199-10-30","12");
+INSERT INTO tb_aluno ( id_cpf_aluno, nome_aluno, data_nascimento) 
+VALUES("11122233366","Ricardo","2099-05-30"),("11122233377","Paulo","2099-05-22"),
+("11122233300","Monica","2199-10-30"),("10022233300","Bruna","1999-10-30"),("77022233300","João","1989-08-30");
 
 select * from tb_aluno where id_cpf_aluno = "55555555555";
 select cep,logradouro,numero,bairro,localidade,uf from tb_endereco 
@@ -116,6 +125,7 @@ drop table tb_materia;
 drop  table tb_endereco;
 drop  table tb_professor;
 
+DELETE FROM tb_classe;
 DELETE FROM tb_materia;
 DELETE FROM tb_endereco;
 DELETE FROM tb_aluno;

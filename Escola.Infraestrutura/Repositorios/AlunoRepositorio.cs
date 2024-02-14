@@ -89,8 +89,6 @@ namespace Escola.Infraestrutura.Repositorios
                         command.Parameters.AddWithValue("@nome", nome);
                         command.Parameters.AddWithValue("@data_nascimento", dataNascimento);
 
-
-
                         command.ExecuteNonQuery();
                     }
                 }

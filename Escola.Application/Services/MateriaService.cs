@@ -13,7 +13,7 @@ namespace Escola.Application.Services
             _materiaRepositorio = materiaRepositorio;
         }
 
-        public void InserirMateria(string id, string nome, int cargaHoraria, string cpf)
+        public void InserirMateria(int id, string nome, int cargaHoraria, string cpf)
         {
             try
             {

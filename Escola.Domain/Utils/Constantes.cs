@@ -34,10 +34,10 @@ namespace Escola.Domain.Utils
             public const string sqlSelectMateria = "SELECT id_materia,nome, carga_horaria,id_cpf_professor FROM tb_materia";
         }
 
-        public static  class ClasseQuery
+        public static class ClasseQuery
         {
-            public const string sqlInsertClasse = "INSERT INTO tb_classe (sala,id_materia, id_cpf_aluno) VALUES(@sala,@idMateria, @cpf)";
+            public const string sqlInsertClasse = "INSERT INTO tb_classe (sala,id_materia,id_cpf_aluno) VALUES(@sala,@idMateria,@cpfALuno)";
+            public const string sqlSelectClassePorSala = "SELECT tb_aluno.nome_aluno FROM tb_classe INNER JOIN tb_aluno ON tb_aluno.id_cpf_aluno =  tb_classe.id_cpf_aluno WHERE tb_classe.sala = @sala";
         }
-
     }
 }
