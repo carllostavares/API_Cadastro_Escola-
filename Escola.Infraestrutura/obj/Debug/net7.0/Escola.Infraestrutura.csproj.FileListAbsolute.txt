@@ -1,3 +1,9 @@
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.csproj.AssemblyReference.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.AssemblyInfoInputs.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.AssemblyInfo.cs
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.csproj.CoreCompileInputs.cache
+C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.sourcelink.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\testhost.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Escola.Domain.deps.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Escola.Domain.runtimeconfig.json
@@ -124,12 +130,6 @@ C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Es
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Escola.Domain.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\bin\Debug\net7.0\Escola.Domain.pdb
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.csproj.AssemblyReference.cache
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.AssemblyInfoInputs.cache
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.AssemblyInfo.cs
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.csproj.CoreCompileInputs.cache
-C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.sourcelink.json
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.csproj.CopyComplete
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\Escola.Infraestrutura.dll
 C:\Users\432399\OneDrive - Localiza\Área de Trabalho\API_escola\API_Cadastro_Escola-\Escola.Infraestrutura\obj\Debug\net7.0\refint\Escola.Infraestrutura.dll

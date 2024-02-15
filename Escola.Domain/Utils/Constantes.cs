@@ -38,6 +38,7 @@ namespace Escola.Domain.Utils
         {
             public const string sqlInsertClasse = "INSERT INTO tb_classe (sala,id_materia,id_cpf_aluno) VALUES(@sala,@idMateria,@cpfALuno)";
             public const string sqlSelectClassePorSala = "SELECT tb_aluno.nome_aluno FROM tb_classe INNER JOIN tb_aluno ON tb_aluno.id_cpf_aluno =  tb_classe.id_cpf_aluno WHERE tb_classe.sala = @sala";
+            public const string sqlSelectClasse = "SELECT  tb_classe.sala,tb_aluno.nome_aluno, tb_materia.nome ,tb_professor.nome_professor FROM tb_classe INNER JOIN tb_aluno ON tb_aluno.id_cpf_aluno = tb_classe.id_cpf_aluno INNER JOIN tb_materia ON tb_materia.id_materia = tb_classe.id_materia INNER JOIN tb_professor ON tb_materia.id_cpf_professor = tb_professor.id_cpf_professor WHERE tb_classe.sala = @sala";
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Escola.Application.Services
             }
         }
 
-        public List<string> RetornaClassePorSala(string sala)
+        public Classe RetornaClassePorSala(string sala)
         {
             try
             {

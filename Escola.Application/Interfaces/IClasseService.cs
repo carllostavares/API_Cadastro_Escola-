@@ -6,6 +6,6 @@ namespace Escola.Application.Interfaces
     {
         void InserirClass(string sala, int idMateria, string cpfAluno);
 
-        List<string> RetornaClassePorSala(string sala);
+        Classe RetornaClassePorSala(string sala);
     }
 }

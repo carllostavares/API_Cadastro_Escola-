@@ -12,5 +12,13 @@ namespace Escola.Domain.Entities
 
         [Required(ErrorMessage = "O campo Sala é obrigatório!")]
         public string? Sala { get; set; }
+
+        public string? NomeProfessor { get; set; }
+
+        public string? NomeMateria { get; set; }
+
+        public List<string>? NomeAluno { get; set; }
+
+
     }
 }
